@@ -33,10 +33,10 @@
 }
 
 .conferenceView  video {
-    width: 40vw;
-    height: 20vh;
+    width: 100px;
+    height: 80px;
     min-width: 30vw;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .chatRoom {
