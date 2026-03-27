@@ -4,6 +4,7 @@
     background: rgb(1, 4, 48);
 }
 
+
 .meetUserVideo {
     position: absolute;
     bottom: 10vh;
@@ -24,19 +25,20 @@
     font-size: 3rem;
 }
 
-.conferenceView { 
-
+.conferenceView {
     display: flex;
-    
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    height: 100vh;             /* full screen */
     padding: 10px;
-    gap: 10px;
 }
 
-.conferenceView  video {
-    width: 40vw;
-    height: 20vh;
-    min-width: 30vw;
-    border-radius: 10px;
+/* Receiver video */
+.conferenceView video {
+    width: 60vh;               /* equal width & height → square */
+    height: 60vh;
+    object-fit: cover;         /* crop properly */
+    border-radius: 20px;
 }
 
 .chatRoom {
