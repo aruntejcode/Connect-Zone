@@ -1,15 +1,28 @@
 /* MAIN CONTAINER */
 .meetVideoContainer {
     display: flex;
-    flex-direction: row;   /* videos left, chat right */
     height: 100vh;
     overflow: hidden;
     background: rgb(1, 4, 48);
 }
 
-/* VIDEO SECTION (LEFT SIDE) */
+/* SELF VIDEO (small bottom-left like Zoom) */
+.meetUserVideo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/* VIDEO SECTION (CENTER AREA) */
 .conferenceView {
-    flex: 1;                     /* take remaining space */
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,32 +37,18 @@
 .conferenceView video {
     width: 25vw;
     max-width: 350px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;   /* square */
     object-fit: cover;
     border-radius: 15px;
 }
 
-/* SINGLE USER (BIG VIDEO LIKE ZOOM) */
+/* SINGLE USER (BIG CENTER VIDEO LIKE ZOOM) */
 .conferenceView:has(video:only-child) video {
     width: 60vh;
     height: 60vh;
 }
 
-/* SELF VIDEO (BOTTOM LEFT SMALL) */
-.meetUserVideo {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-
-    width: 150px;
-    height: 150px;
-
-    object-fit: cover;
-    border-radius: 10px;
-    z-index: 10;
-}
-
-/* CHAT PANEL (RIGHT SIDE) */
+/* CHAT PANEL (RIGHT SIDE - SAME DESIGN) */
 .chatRoom {
     width: 30vw;
     height: 100%;
@@ -60,8 +59,6 @@
 
     display: flex;
     flex-direction: column;
-
-    margin-left: auto;   /* force right side */
 }
 
 /* CHAT CONTENT */
@@ -76,7 +73,7 @@
     margin-top: auto;
 }
 
-/* BUTTONS (BOTTOM CENTER ONLY VIDEO AREA) */
+/* BUTTONS (BOTTOM CENTER - ONLY VIDEO AREA) */
 .buttonContainers {
     position: absolute;
     bottom: 10px;
