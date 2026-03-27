@@ -9,7 +9,7 @@
     position: absolute;
     bottom: 20px;
     left: 30px;
-
+    right: 20px;
     width: 150px;      /* equal width & height → square */
     height: 150px;
 
