@@ -6,11 +6,11 @@
 
 .meetUserVideo {
     position: absolute;
-    bottom: 10vh;
-    height: 20vh;
+    bottom: 50vh;
+    height: 400vh;
     width: auto;
     left: 0;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .buttonContainers {
