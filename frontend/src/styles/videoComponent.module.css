@@ -7,11 +7,16 @@
 
 .meetUserVideo {
     position: absolute;
-    bottom: 10vh;
-    height: 20vh;
-    width: auto;
-    left: 0;
-    border-radius: 20px;
+    bottom: 20px;
+    left: 20px;
+
+    width: 150px;      /* equal width & height → square */
+    height: 150px;
+
+    object-fit: cover; /* prevents distortion */
+    border-radius: 15px;
+
+    z-index: 10;       /* stays above other videos */
 }
 
 .buttonContainers {
