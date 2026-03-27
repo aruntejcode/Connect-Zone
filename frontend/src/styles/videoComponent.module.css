@@ -6,13 +6,12 @@
 
 .meetUserVideo {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 200px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* important for proper scaling */
+    border-radius: 0;
 }
 
 .buttonContainers {
