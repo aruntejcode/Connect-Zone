@@ -24,18 +24,17 @@
     font-size: 3rem;
 }
 
-.conferenceView { 
-
+.conferenceView {
     display: flex;
-    
-    padding: 10px;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.conferenceView  video {
-    width: 100px;
-    height: 80px;
-    min-width: 30vw;
+.conferenceView video {
+    width: 60vh;        /* responsive size */
+    height: 60vh;
+    object-fit: cover;
     border-radius: 20px;
 }
 
