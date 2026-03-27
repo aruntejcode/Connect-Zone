@@ -31,18 +31,18 @@
 
 .conferenceView {
     display: flex;
-    justify-content: center;   /* center horizontally */
-    align-items: center;       /* center vertically */
-    height: 100vh;             /* full screen */
-    padding: 10px;
+    flex-wrap: wrap;              /* allows multiple videos */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100vh;
 }
 
-/* Receiver video */
 .conferenceView video {
-    width: 60vh;               /* equal width & height → square */
-    height: 60vh;
-    object-fit: cover;         /* crop properly */
-    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .chatRoom {
