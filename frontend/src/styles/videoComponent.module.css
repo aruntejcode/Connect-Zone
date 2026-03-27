@@ -8,7 +8,7 @@
 .meetUserVideo {
     position: absolute;
     bottom: 20px;
-    left: 15px;
+    left: 30px;
 
     width: 150px;      /* equal width & height → square */
     height: 150px;
