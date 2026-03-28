@@ -29,8 +29,9 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    transform: translateX(-30px);
+    margin-right: 30vw;
 }
+
 
 .conferenceView video {
     width: 60vh;        /* responsive size */
